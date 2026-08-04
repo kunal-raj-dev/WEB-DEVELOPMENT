@@ -1,0 +1,30 @@
+div {
+  height: 200px;
+  width: 500px;
+  background-color: pink;
+  
+  /* Border */
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  
+  /* Padding (Inside spacing) */
+  padding: 20px;
+  
+  /* Margin (Outside spacing) */
+  margin: 25px 10px;
+  
+  /* Box Sizing */
+  box-sizing: border-box;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
