@@ -1,0 +1,44 @@
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.light-box {
+  height: 210px;
+  width: 70px;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#red {
+  height: 50px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: rgb(255, 73, 73);
+}
+
+#yellow {
+  height: 50px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: rgb(238, 238, 69);
+}
+
+#green {
+  height: 50px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: rgb(35, 218, 35);
+}
+
+.pole {
+  width: 15px;
+  height: 300px;
+  background-color: grey;
+}
