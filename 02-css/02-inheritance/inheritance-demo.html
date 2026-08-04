@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance Demo</title>
+    <style>
+      /* 
+        Body styles are inherited by descendant elements like h1, h2, p, and forms.
+        However, form controls like input, select, and button do not inherit 
+        font-family or color by default in many browsers unless explicitly specified.
+      */
+      body {
+        font-family: Georgia, serif;
+        color: #333333;
+        background-color: #f7f7f7;
+        padding: 20px;
+      }
+
+      /* Borders, margins, and padding are NOT inherited */
+      div {
+        border: 2px solid #cccccc;
+        margin: 15px 0;
+        padding: 15px;
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Main Heading</h1>
+    <div>
+      <h2>Heading 1</h2>
+      <form>
+        <label>username: </label>
+        <input type="text" placeholder="username" />
+        <label>password: </label>
+        <input type="password" placeholder="password" />
+        <button>Login</button>
+      </form>
+      <hr />
+    </div>
+
+    <div>
+      <h2>Heading 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+        inventore saepe, reiciendis dolorem illo culpa velit odio pariatur,
+        officia ad veniam itaque adipisci veritatis quos tenetur. Ut autem
+        dolores mollitia!
+      </p>
+      <hr />
+    </div>
+  </body>
+</html>
