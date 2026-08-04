@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: white;
+}
+
+.parent-container {
+    font-family: Georgia, serif;
+    color: darkblue;
+    background-color: lightgray;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.parent-container input,
+.parent-container button {
+    font-family: inherit;
+    color: inherit;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.parent-container label {
+    display: block;
+    margin-top: 10px;
+}
