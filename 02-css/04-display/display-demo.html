@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property Demo</title>
+    <link rel="stylesheet" href="display-demo.css">
+</head>
+<body>
+    <h1>CSS Display Property Demonstration</h1>
+
+    <!-- 1. Display Block -->
+    <section>
+        <h2>1. Display: Block</h2>
+        <p class="desc">Block elements take the full available width and start on a new line.</p>
+        <div class="box block-box">Block 1</div>
+        <div class="box block-box">Block 2</div>
+    </section>
+
+    <!-- 2. Display Inline -->
+    <section>
+        <h2>2. Display: Inline</h2>
+        <p class="desc">Inline elements take only necessary width and do not respect custom width/height.</p>
+        <span class="box inline-box">Inline 1</span>
+        <span class="box inline-box">Inline 2</span>
+        <span class="box inline-box">Inline 3</span>
+    </section>
+
+    <!-- 3. Display Inline-Block -->
+    <section>
+        <h2>3. Display: Inline-Block</h2>
+        <p class="desc">Inline-block elements flow horizontally like inline, but respect custom width, height, and margins.</p>
+        <div class="box inline-block-box">Inline-Block 1</div>
+        <div class="box inline-block-box">Inline-Block 2</div>
+        <div class="box inline-block-box">Inline-Block 3</div>
+    </section>
+
+    <!-- 4. Display None vs Visibility Hidden -->
+    <section>
+        <h2>4. Display: None vs Visibility: Hidden</h2>
+        <p class="desc">Display: none completely removes the element from the layout flow.</p>
+        <div class="box hidden-box">Hidden with display: none</div>
+        <div class="box visible-box">Normal Box (Next to hidden)</div>
+    </section>
+</body>
+</html>
