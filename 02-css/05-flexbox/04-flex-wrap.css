@@ -1,0 +1,47 @@
+/* CSS Flexbox Module - Topic 04: Flex Wrap */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.demo-section {
+    margin-bottom: 25px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.container {
+    display: flex;
+    background-color: #fce7f3;
+    padding: 10px;
+    border-radius: 6px;
+    width: 400px; /* Fixed width to force wrapping behavior */
+    border: 2px dashed #ec4899;
+    margin-top: 10px;
+}
+
+.nowrap       { flex-wrap: nowrap; }
+.wrap         { flex-wrap: wrap; }
+.wrap-reverse { flex-wrap: wrap-reverse; }
+
+.box {
+    background-color: #db2777;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
