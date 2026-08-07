@@ -1,0 +1,18 @@
+#nav-bar {
+  height: 50px;
+  width: 900px;
+  border: 5px solid #64a9a1;
+  border-radius: 10px;
+  background-color: #f5c3cc;
+  padding-left: 20px;
+  display: flex;
+  /* align-items: center; */
+}
+
+div:not(#nav-bar) {
+  height: 50px;
+  width: 80px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
