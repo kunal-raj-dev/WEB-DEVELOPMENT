@@ -1,0 +1,50 @@
+/* CSS Flexbox Module - Topic 06: Align Content */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.demo-section {
+    margin-bottom: 25px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Required for align-content to take effect */
+    background-color: #ede9fe;
+    padding: 10px;
+    border-radius: 6px;
+    height: 220px; /* Fixed height for multi-line spacing */
+    width: 320px;
+    gap: 5px;
+}
+
+.flex-start    { align-content: flex-start; }
+.flex-end      { align-content: flex-end; }
+.center        { align-content: center; }
+.space-between { align-content: space-between; }
+.space-around  { align-content: space-around; }
+.stretch       { align-content: stretch; }
+
+.box {
+    background-color: #7c3aed;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 90px;
+    text-align: center;
+}
