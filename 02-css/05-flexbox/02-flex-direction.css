@@ -1,0 +1,59 @@
+/* CSS Flexbox Module - Topic 02: Flex Direction */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.demo-section {
+    margin-bottom: 25px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.container {
+    display: flex;
+    background-color: #e0f2fe;
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+/* 1. Row (Default) */
+.flex-row {
+    flex-direction: row; /* Main axis: horizontal left to right */
+}
+
+/* 2. Row Reverse */
+.flex-row-reverse {
+    flex-direction: row-reverse; /* Main axis: horizontal right to left */
+}
+
+/* 3. Column */
+.flex-column {
+    flex-direction: column; /* Main axis: vertical top to bottom */
+}
+
+/* 4. Column Reverse */
+.flex-column-reverse {
+    flex-direction: column-reverse; /* Main axis: vertical bottom to top */
+}
+
+.box {
+    background-color: #0284c7;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
