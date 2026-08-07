@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08 - Flex Sizing (Grow, Shrink, Basis)</title>
+    <link rel="stylesheet" href="08-flex-sizing.css">
+</head>
+<body>
+    <h1>08 - Flex Sizing (Grow, Shrink, Basis)</h1>
+
+    <div class="demo-section">
+        <h2>1. flex-grow (Proportional Growth)</h2>
+        <p>Item 2 grows twice as fast as Item 1 and Item 3.</p>
+        <div class="container">
+            <div class="box grow-1">grow: 1</div>
+            <div class="box grow-2">grow: 2</div>
+            <div class="box grow-1">grow: 1</div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>2. flex-basis (Initial Main Size)</h2>
+        <p>Sets initial default size of a flex item before growing/shrinking.</p>
+        <div class="container">
+            <div class="box basis-100">basis: 100px</div>
+            <div class="box basis-200">basis: 200px</div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>3. flex-shrink (Shrinking Rate)</h2>
+        <p>Item 1 (shrink: 0) refuses to shrink, while Item 2 and 3 shrink to fit container.</p>
+        <div class="container shrink-container">
+            <div class="box shrink-0">shrink: 0</div>
+            <div class="box shrink-1">shrink: 1</div>
+            <div class="box shrink-2">shrink: 2</div>
+        </div>
+    </div>
+</body>
+</html>
