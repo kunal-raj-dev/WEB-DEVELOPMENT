@@ -1,0 +1,39 @@
+/* CSS Flexbox Module - Topic 07: Align Self */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Parent aligns items in center by default */
+    background-color: #ffedd5;
+    padding: 10px;
+    border-radius: 8px;
+    height: 150px;
+    gap: 15px;
+}
+
+.box {
+    background-color: #ea580c;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Specific align-self overrides on flex items */
+.self-start   { align-self: flex-start; background-color: #dc2626; }
+.self-center  { align-self: center; background-color: #d97706; }
+.self-end     { align-self: flex-end; background-color: #16a34a; }
+.self-stretch { align-self: stretch; background-color: #2563eb; }
