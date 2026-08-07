@@ -1,0 +1,46 @@
+/* CSS Flexbox Module - Topic 03: Justify Content */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.demo-section {
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.container {
+    display: flex;
+    background-color: #fef3c7;
+    padding: 10px;
+    border-radius: 6px;
+    min-height: 60px;
+}
+
+.flex-start    { justify-content: flex-start; }
+.flex-end      { justify-content: flex-end; }
+.center        { justify-content: center; }
+.space-between { justify-content: space-between; }
+.space-around  { justify-content: space-around; }
+.space-evenly  { justify-content: space-evenly; }
+
+.box {
+    background-color: #d97706;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
