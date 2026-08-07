@@ -1,0 +1,50 @@
+/* CSS Flexbox Module - Topic 09: Flex Shorthand Property */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.demo-section {
+    margin-bottom: 25px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.container {
+    display: flex;
+    background-color: #e0e7ff;
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.box {
+    background-color: #4338ca;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 1. Equal 1-part distribution */
+.flex-1 { flex: 1; } /* Equivalent to flex: 1 1 0% */
+
+/* 2. Fixed sidebar + flexible main area pattern */
+.sidebar { flex: 0 0 180px; background-color: #3730a3; } /* Fixed width 180px, no grow, no shrink */
+.main-content { flex: 1; background-color: #4f46e5; }   /* Fills all remaining space */
+
+/* 3. Custom ratio distribution */
+.flex-ratio-1 { flex: 1 1 0; }
+.flex-ratio-3 { flex: 3 1 0; }
