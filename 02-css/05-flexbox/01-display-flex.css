@@ -1,0 +1,47 @@
+/* CSS Flexbox Module - Topic 01: What is Flexbox & Display Flex */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.description {
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+/* Normal Block Container */
+.block-container {
+    background-color: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* Flex Container: Converts direct children into flex items */
+.flex-container {
+    display: flex; /* Activates 1D flex context */
+    background-color: #dbeafe;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px dashed #3b82f6;
+}
+
+.box {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    margin: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
