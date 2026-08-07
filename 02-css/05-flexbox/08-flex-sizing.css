@@ -1,0 +1,55 @@
+/* CSS Flexbox Module - Topic 08: Flex Sizing */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.demo-section {
+    margin-bottom: 25px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.container {
+    display: flex;
+    background-color: #ccfbf1;
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.box {
+    background-color: #0d9488;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 1. Flex Grow */
+.grow-1 { flex-grow: 1; }
+.grow-2 { flex-grow: 2; }
+
+/* 2. Flex Basis */
+.basis-100 { flex-basis: 100px; }
+.basis-200 { flex-basis: 200px; }
+
+/* 3. Flex Shrink */
+.shrink-container {
+    width: 300px; /* Fixed small width to test shrinking */
+}
+.shrink-0 { flex-shrink: 0; width: 150px; } /* Prevents shrinking */
+.shrink-1 { flex-shrink: 1; width: 150px; }
+.shrink-2 { flex-shrink: 2; width: 150px; }
