@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Demo</title>
+    <style>
+        /* Pseudo-classes style an element based on its state */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+            outline: none;
+        }
+        
+        li:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class Demo</h1>
+    <a href="#">Hover over me!</a>
+    <br><br>
+    <input type="text" placeholder="Click to focus">
+    <br><br>
+    <ul>
+        <li>First child (Bold)</li>
+        <li>Second child</li>
+        <li>Third child</li>
+    </ul>
+</body>
+</html>
