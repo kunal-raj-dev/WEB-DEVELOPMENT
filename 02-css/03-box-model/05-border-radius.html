@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <style>
+        .rounded-box {
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+            border-radius: 15px; /* Rounds all 4 corners */
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            border-radius: 50%; /* Creates a circle if width and height are equal */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Radius Property</h1>
+    <div class="rounded-box">Rounded Corners</div>
+    <div class="circle">Perfect Circle</div>
+</body>
+</html>
