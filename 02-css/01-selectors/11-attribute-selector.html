@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector Demo</title>
+    <style>
+        /* Attribute selector targets elements based on the presence or value of an attribute */
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 5px;
+        }
+
+        a[target="_blank"] {
+            color: orange;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selector Demo</h1>
+    <form>
+        <label>Name: <input type="text" placeholder="Enter name"></label><br><br>
+        <label>Password: <input type="password" placeholder="Enter password"></label>
+    </form>
+    <br>
+    <a href="#">Normal link</a><br>
+    <a href="#" target="_blank">Opens in new tab (Targeted)</a>
+</body>
+</html>
