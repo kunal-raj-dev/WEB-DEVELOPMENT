@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding Property</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            background-color: lightgreen;
+            margin-bottom: 20px;
+        }
+
+        .no-padding {
+            padding: 0;
+        }
+
+        .all-padding {
+            padding: 20px; /* Applies to all 4 sides */
+        }
+
+        .individual-padding {
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+
+        .shorthand-padding {
+            padding: 10px 40px; /* top/bottom 10px, left/right 40px */
+        }
+    </style>
+</head>
+<body>
+    <h1>Padding Property Demo</h1>
+    <div class="box no-padding">No Padding</div>
+    <div class="box all-padding">20px Padding on all sides</div>
+    <div class="box individual-padding">Individual padding (Top 10, Right 20, Bottom 30, Left 40)</div>
+    <div class="box shorthand-padding">Shorthand padding (10px Top/Bottom, 40px L/R)</div>
+</body>
+</html>
