@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CSS Selectors Practice</title>
+    <style>
+      /* Center align text globally */
+      * {
+        text-align: center;
+      }
+
+      /* Style the main title */
+      #mainTopic {
+        color: blue;
+      }
+
+      /* Apply font family to headings */
+      h1,
+      h3 {
+        font-family: Georgia, serif;
+      }
+
+      /* Highlight paragraphs */
+      .para {
+        color: white;
+        background-color: cornflowerblue;
+        padding: 8px;
+        margin: 5px 0;
+      }
+
+      /* Style buttons inside divs */
+      div button {
+        color: azure;
+        background-color: purple;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      /* Button hover pseudo-class */
+      button:hover {
+        color: blue;
+        background-color: yellow;
+      }
+
+      /* Style odd paragraphs with text color */
+      p:nth-of-type(2n + 1) {
+        color: yellow;
+      }
+
+      /* Style first letter of h1 */
+      h1::first-letter {
+        color: red;
+      }
+
+      /* Sibling selector for checked checkboxes */
+      input[type="checkbox"]:checked + label {
+        color: darkgreen;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="mainTopic">CSS Practice</h1>
+    <h3>Let's learn about selectors.</h3>
+    
+    <p class="para">There are multiple selectors in CSS.</p>
+    <p class="para">Some of them include class selectors, ID selectors, etc.</p>
+    <p class="para">And we can also combine them together.</p>
+    
+    <div>
+      <h5>Did you like the practice set?</h5>
+      <input type="checkbox" id="yes" />
+      <label for="yes">Yes</label>
+      <br /><br />
+      <button>Learn next!</button>
+    </div>
+  </body>
+</html>
