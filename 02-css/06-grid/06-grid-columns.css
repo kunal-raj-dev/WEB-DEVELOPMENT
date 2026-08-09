@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.item {
+    background-color: slateblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Positioning items across columns */
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* Shorthand: grid-column: 1 / 3; */
+}
+
+.item4 {
+    grid-column: 2 / span 3; /* Start at line 2 and span 3 columns */
+}
