@@ -1,0 +1,14 @@
+/* CSS Grid Layout is a two-dimensional layout system */
+.container {
+    display: grid;
+    background-color: #eee;
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+}
