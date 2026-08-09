@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Demo</title>
+    <style>
+        /* Inherited properties apply to the element and its children */
+        body {
+            font-family: Arial, sans-serif;
+            color: darkslategray;
+        }
+
+        /* Some properties like border are not inherited by default */
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- The body color and font-family will be inherited by the elements inside it -->
+    <h1>Inheritance Demo</h1>
+    
+    <div class="container">
+        <h2>This text inherits the color and font from body</h2>
+        <p>The border from the container is NOT inherited by this paragraph.</p>
+    </div>
+</body>
+</html>
