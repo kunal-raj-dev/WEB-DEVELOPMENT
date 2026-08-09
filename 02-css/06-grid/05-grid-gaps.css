@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    /* Gaps between grid items */
+    row-gap: 20px;
+    column-gap: 40px;
+    /* Or use shorthand: gap: 20px 40px; (row col) */
+    
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.item {
+    background-color: darkorange;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
