@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 10px;
+    
+    /* Container alignment properties */
+    justify-items: center; /* Aligns items horizontally */
+    align-items: center;   /* Aligns items vertically */
+    
+    background-color: #eee;
+    padding: 10px;
+    height: 300px;
+}
+
+.item {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.item2 {
+    /* Overriding container alignment for a specific item */
+    justify-self: end;
+    align-self: end;
+    background-color: darkcyan;
+}
