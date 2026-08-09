@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibling Combinator Demo</title>
+    <style>
+        /* Adjacent Sibling Combinator (+) targets the element immediately following a specified element */
+        h2 + p {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* General Sibling Combinator (~) targets all elements that follow a specified element and share the same parent */
+        h2 ~ span {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sibling Combinator Demo</h1>
+    
+    <h2>Heading</h2>
+    <p>This paragraph is adjacent to the h2, so it is green.</p>
+    <p>This paragraph is not immediately adjacent, so it is normal.</p>
+    
+    <span>This span is a general sibling of the h2, so it is red.</span>
+    <br>
+    <span>This span is also a general sibling of the h2, so it is red.</span>
+</body>
+</html>
