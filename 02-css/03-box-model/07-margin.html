@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Property</title>
+    <style>
+        .container {
+            border: 2px dashed black;
+        }
+
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: lightsalmon;
+            border: 1px solid red;
+        }
+
+        .margin-all {
+            margin: 20px; /* 20px space outside the box on all sides */
+        }
+
+        .margin-auto {
+            margin: 0 auto; /* Centers a block element horizontally */
+            background-color: lightseagreen;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Margin Property Demo</h1>
+    <div class="container">
+        <div class="box">No Margin Box</div>
+        <div class="box margin-all">20px Margin Box</div>
+        <div class="box margin-auto">Horizontally Centered</div>
+    </div>
+</body>
+</html>
