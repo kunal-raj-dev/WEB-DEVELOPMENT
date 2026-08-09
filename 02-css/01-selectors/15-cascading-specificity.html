@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading & Specificity Demo</title>
+    <style>
+        /* Element selector - Lowest specificity */
+        p {
+            color: black;
+        }
+
+        /* Class selector - Higher specificity */
+        .special-text {
+            color: green;
+        }
+
+        /* ID selector - Highest specificity (among these three) */
+        #unique-text {
+            color: red;
+        }
+        
+        /* Cascading: The last rule applied wins if specificities are equal */
+        h2 {
+            color: blue;
+        }
+        h2 {
+            color: purple; /* This wins due to cascade */
+        }
+    </style>
+</head>
+<body>
+    <h1>Cascading & Specificity Demo</h1>
+    
+    <h2>This should be purple (Cascading)</h2>
+    
+    <p>This is a normal paragraph (Black).</p>
+    <p class="special-text">This has a class (Green).</p>
+    <p class="special-text" id="unique-text">This has a class and an ID (Red, because ID wins).</p>
+    <p style="color: orange;">This uses inline styles which beat ID selectors (Orange).</p>
+</body>
+</html>
