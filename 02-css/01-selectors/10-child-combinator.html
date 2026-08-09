@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Combinator Demo</title>
+    <style>
+        /* Child combinator (>) targets elements that are direct children of a specified element */
+        ul > li {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Combinator Demo</h1>
+    <ul>
+        <li>Direct child 1 (Targeted)</li>
+        <li>Direct child 2 (Targeted)
+            <ul>
+                <li>Nested child (Not a direct child of the outer ul)</li>
+            </ul>
+        </li>
+        <li>Direct child 3 (Targeted)</li>
+    </ul>
+</body>
+</html>
