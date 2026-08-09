@@ -1,0 +1,14 @@
+/* The Grid Model defines a container and items */
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: coral;
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+}
