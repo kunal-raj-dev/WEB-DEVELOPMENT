@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!important Demo</title>
+    <style>
+        /* !important overrides all other rules, even inline styles and IDs */
+        p {
+            color: blue !important;
+        }
+
+        #important-text {
+            color: red;
+        }
+        
+        .important-class {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>!important Demo</h1>
+    
+    <p>This paragraph is blue.</p>
+    <p id="important-text">This paragraph has an ID trying to make it red, but it remains blue due to !important.</p>
+    <p class="important-class" style="color: orange;">This paragraph has inline styles and a class, but it is STILL blue.</p>
+</body>
+</html>
