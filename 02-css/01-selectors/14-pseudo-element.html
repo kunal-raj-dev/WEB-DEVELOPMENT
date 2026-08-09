@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Demo</title>
+    <style>
+        /* Pseudo-elements style a specific part of an element */
+        p::first-line {
+            color: blue;
+            text-transform: uppercase;
+        }
+
+        h2::before {
+            content: "👉 ";
+        }
+        
+        h2::after {
+            content: " 👈";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Element Demo</h1>
+    <h2>Heading with before and after</h2>
+    <p>
+        This is a paragraph with a pseudo-element applied to its first line. 
+        Only the first line will be blue and uppercase. The rest of the text 
+        will remain normal as it wraps to the next line.
+    </p>
+</body>
+</html>
