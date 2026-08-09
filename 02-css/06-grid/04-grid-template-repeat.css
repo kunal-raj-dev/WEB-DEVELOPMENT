@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    /* Using the repeat() function for concise column definition */
+    grid-template-columns: repeat(4, 1fr); 
+    /* Using fr (fractional units) allocates available space */
+    background-color: #eee;
+    padding: 10px;
+}
+
+.item {
+    background-color: royalblue;
+    border: 1px solid #fff;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
