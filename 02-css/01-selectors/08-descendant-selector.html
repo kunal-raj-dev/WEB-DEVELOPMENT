@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector Demo</title>
+    <style>
+        /* Descendant selector targets elements that are descendants of a specified element */
+        div p {
+            color: blue;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant Selector Demo</h1>
+    <div>
+        <p>This paragraph is inside a div, so it is blue.</p>
+        <section>
+            <p>This paragraph is also inside a div (nested in section), so it is also blue.</p>
+        </section>
+    </div>
+    <p>This paragraph is outside the div, so it is not affected.</p>
+</body>
+</html>
