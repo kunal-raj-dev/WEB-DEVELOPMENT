@@ -1,0 +1,28 @@
+div {
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+  font-size: 20px;
+  transition-duration: 2s;
+}
+
+#a:hover {
+  transition: 10s;
+  opacity: 0;
+}
+
+#b:hover {
+  transition: 1s;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+#c:hover {
+  transition: margin-top 2s ease-in-out;
+  margin-top: 400px;
+  border-radius: 20%;
+}
