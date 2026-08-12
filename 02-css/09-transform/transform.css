@@ -1,0 +1,33 @@
+div {
+  height: 100px;
+  width: 500px;
+  background-color: bisque;
+  margin-top: 10px;
+  border: 3px solid black;
+}
+
+div:nth-of-type(2n) {
+  background-color: chocolate;
+}
+
+#a {
+  transform: rotate(45deg);
+}
+
+#b {
+  transform: scale(0.5);
+}
+
+#c {
+  transform: translateX(50px);
+  transform: translateY(-50px);
+}
+
+#d {
+  transform: skew(30deg);
+}
+
+#e:hover {
+  transition: 2s;
+  transform: skew(-30deg);
+}
