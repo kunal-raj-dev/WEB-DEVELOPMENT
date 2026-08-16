@@ -1,0 +1,98 @@
+body {
+  min-height: 100vh;
+  background: url("photo.jpg") no-repeat center center fixed;
+  margin: 0;
+}
+
+.main_box {
+  height: 100vh;
+  width: 300px;
+  border-right: 0.5px solid rgba(87, 87, 87, 0.329);
+  box-sizing: border-box;
+  background: rgba(103, 103, 103, 0.179);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar_menu {
+  position: relative;
+  height: 100%;
+}
+
+.btn_two {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  justify-content: center;
+  font-size: 25px;
+}
+
+#check {
+  display: none;
+}
+
+.btn_one {
+  position: absolute;
+  top: 15px;
+  left: -25px;
+  font-size: 20px;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.main_box:has(#check:checked) .btn_one {
+  transform: translateX(330px);
+}
+
+.main_box:has(#check:checked) {
+  transform: translateX(-300px);
+}
+
+.logo {
+  /* text-align: center; */
+  border-bottom: 0.5px solid rgba(87, 87, 87, 0.329);
+  padding: 10px 0 10px 30px;
+}
+
+.logo > a {
+  font-size: 30px;
+}
+
+.menu i {
+  color: aliceblue;
+  margin-right: 15px;
+}
+
+.social_media > ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 35px;
+  gap: 40px;
+}
+
+.social_media > ul > a {
+  color: rgba(251, 251, 251, 0.525);
+  font-size: 25px;
+}
+
+.social_media > ul {
+  position: absolute;
+  bottom: 10px;
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+}
