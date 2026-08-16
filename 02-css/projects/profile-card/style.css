@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  height: 350px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: burlywood;
+  margin: 15px;
+}
+
+.profile-card:hover {
+  transform: rotate(-2deg);
+  transition-duration: 0.3s;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.card-content-1 {
+  height: 350px;
+  width: 250px;
+  background-image: url(boy1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
